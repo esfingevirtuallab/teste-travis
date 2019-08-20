@@ -18,7 +18,7 @@ sudo: false
 # run maven goals
 script:
 - cd devframework
-- mvn install
+- mvn install -DskipTests
 - rm -f dist/*.war && cp target/*.war dist/
 - cp target/*.war /opt/tomcat/webapps/
 
